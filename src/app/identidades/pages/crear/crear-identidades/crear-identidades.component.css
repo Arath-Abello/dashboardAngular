@@ -1,0 +1,93 @@
+.perfil{
+  border-radius: 50%;
+      width: 50px;
+      height: 50px;
+}
+nav.navbar{
+  height: auto;
+}
+input[type="text"]{
+  background-color: white;
+  border-radius: .3125em;
+  border: 1px solid black;
+}
+.inputImage{
+  border: none;
+}
+.caja{
+  border: 1px solid black;
+  border-radius: .625em;
+  background-color: white;
+}
+.inputImage img{
+  width: 90px;
+  height: 90px;
+}
+.inputImage:focus img{
+  border: 1px solid #c357ff;
+  padding: 5px;
+}
+.header-modulo-identidad, .form, .article {
+  padding: 1em 1em;
+}
+.content-inputNombre{
+  margin-bottom: 1em;
+}
+.contentGrid{
+  display: grid;
+  grid-template-columns: repeat(4, 90px);
+  grid-template-rows: 90px;
+  gap: .5em;
+}
+.invertido{
+  transform: rotateZ(180deg);
+}
+.caja-img img{
+  width: 136px;
+  height: 120px;
+}
+.caja-img{
+  text-align: center;
+}
+.btn-identidad{
+  background-color: #c357ff;
+  width: 30%;
+  margin-left: auto;
+  margin-top: 1em;
+  color: white;
+}
+.btn-identidad:hover{
+  background-color: #d07bff;
+}
+.contenedorInputNombre{
+  display: flex;
+  gap: .9375em;
+}
+.contenedorAvatares{
+  gap: .9375em;
+  justify-content: flex-end;
+}
+.gustosPersonalizacion{
+  margin-top: .625rem;
+}
+.article{
+  padding-right: 0;
+}
+@media screen and (max-width: 1024px){
+  .contenedorAvatares{
+      justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .caja-img{
+      transform: rotate(90deg);
+  }
+}
+@media screen and (max-width: 576px) {
+  .contentGrid{
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .contenedorAvatares{
+      flex-direction: column;
+  }
+}

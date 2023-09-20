@@ -1,0 +1,111 @@
+.header-crear-empresa{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1em;
+}
+.perfil{
+  border-radius: 50%;
+      width: 50px;
+      height: 50px;
+}
+.contenedor-crear{
+  padding: 1em 1em;
+}
+.formEmpresa{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: .8em;
+}
+.contentInputEmpresa{
+  display: flex;
+}
+.contentInputEmpresa input{
+  border-radius: .3125em;
+  border: 1px solid black;
+}
+.img-btn{
+  width: 20px;
+  height: 20px;
+}
+th.th{
+  background-color: #DD9FFF;
+  text-align: center;
+  font-size: .625rem;
+}
+.tbody-relative tr td{
+  text-align: center;
+  line-height: 50px;
+}
+.tbody-relative{
+  position: relative;
+}
+.caja-escondida{
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  left: 45%;
+  width: 30%;
+  display: none;
+  background-color: #F4F4F4;
+  opacity: .9;
+  padding: 2em 2em;
+  text-align: center;
+  border-radius: .625em;
+}
+form.formContacto{
+  display: flex;
+  flex-direction: column;
+  gap: .4em;
+}
+.cerrar_contacto {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.btnContactoCrear, .editar-empresa, .actualizar-contacto{
+  background-color: #c357ff;
+  color: white;
+}
+.btnContactoCrear:hover, .editar-empresa:hover, .actualizar-contacto:hover{
+  background-color: #d07bff;
+  color: white;
+}
+.editar-empresa{
+  margin-left: auto;
+}
+.editar-empresa-contenedor{
+  display: flex;
+  padding: 0 1em;
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .caja-escondida{
+      left: 28%;
+      width: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .caja-escondida{
+      left: 30%;
+      width: 40%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .formEmpresa{
+      display: block;
+  }
+  .contentInputEmpresa{
+      margin-bottom: 1em;
+  }
+  .caja-escondida{
+      left: 0;
+      width: 100%;
+  }
+}
+@media screen and (max-width: 376px) {
+  .caja-escondida{
+      left: 0%;
+  }
+}
+
+

@@ -1,0 +1,34 @@
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.articleAutenticacion, .figureIndex{
+  text-align: center;
+}
+input[type="text"]{
+  border-radius: .625em;
+  border: 1px solid black;
+}
+.buttonEntrar{
+  background-color: #c357ff;
+  color: white;
+  border-radius: .625em;
+}
+.buttonEntrar:hover{
+  background-color: #d07bff;
+  color: white;
+}
+.logo-inicio{
+  width: 300px;
+  height: auto;
+}
+.contenedorInicio{
+  background-color: #f4e1ff;
+  border-radius: .625em;
+  padding: 1em 0;
+}
+.contenedorInicioForm, .headerUsuario{
+  margin-bottom: 1em;
+}

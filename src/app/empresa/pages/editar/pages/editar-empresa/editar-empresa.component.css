@@ -1,0 +1,53 @@
+.contenedor-crear{
+  padding: 1em 1em;
+}
+.perfil{
+  border-radius: 50%;
+      width: 50px;
+      height: 50px;
+}
+.formEmpresa{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: .8em;
+}
+.contentFormEditar{
+  display: flex;
+  column-gap: 7em;
+  flex-wrap: wrap;
+}
+input{
+  border-radius: .3125em;
+  border: 1px solid black;
+}
+.formeditarEmpresa, .contentBtnAdmin{
+  display: flex;
+  flex-direction: column;
+}
+.contentBtnAdmin{
+  justify-content: center;
+  gap: 1em;
+}
+.contenedorEditarEmpresa{
+  display: flex;
+}
+.crearAdminBtn{
+  background-color: #c357ff;
+  color: white;
+  padding: 1em 2em;
+}
+.crearAdminBtn:hover{
+  background-color: #d07bff;
+  color: white;
+}
+@media screen and (max-width: 576px) {
+  .formEmpresa{
+      display: block;
+  }
+  .contentBtnAdmin{
+      gap: 1em;
+  }
+  .contentFormEditar{
+      gap: 1em;
+  }
+}

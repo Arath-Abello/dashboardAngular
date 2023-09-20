@@ -1,0 +1,124 @@
+/* You can add global styles to this file, and also import other style files */
+    /*
+    * ESTILOS GENERALES PARA NO REPETIRLO EN LOS OTROS CSS DE CADA ARCHIVO
+*/
+
+    /************************
+        NAVBAR
+    ************************/
+    body{
+      position: relative;
+      font-size: 100%;
+      background-color: #EBECF5;
+  }
+  nav.navbar{
+      height: 100vh;
+      background-color: #67019e;
+  }
+  a.navbar-brand{
+      margin: 0;
+  }
+  .navbar-expand-lg .navbar-collapse{
+      justify-content: center;
+  }
+
+  a.nav-link{
+      padding: 0;
+  }
+  .nav-link > span{
+      color: #f0f0f0;
+      display: block;
+      padding: .6em;
+  }
+  .nav-link > span:hover{
+      color: white;
+      background-color: #d07bff;
+  }
+  .logo{
+      width: 100px;
+      height: auto;
+  }
+
+  div.container-fluid.contenedor{
+      gap: 3em;
+  }
+  .navbar-nav{
+      text-align: center;
+  }
+
+  .nav-item:hover span{
+      color: white;
+  }
+  #navbarNav{
+      width: 100%;
+  }
+  .navbar-brand, .contenedor-perfil{
+      margin: 0 auto;
+  }
+  .nav-link{
+      font-size: .8rem;
+  }
+  .icono-menu{
+      font-size: 2.2rem;
+      font-weight: bold;
+  }
+  .contenedor{
+      padding: 0;
+  }
+  .content-img-perfil{
+      text-decoration: none;
+  }
+  .contenedor-perfil{
+      display: flex;
+      align-items: end;
+      justify-content: flex-end;
+      gap: 1em;
+      border-radius: .3125em;
+  }
+  .contenedorbgPadding{
+      background-color: white;
+      padding: 1em 0;
+  }
+
+  @media screen and (max-width: 1920px) {
+
+      .navbar-expand-lg .navbar-nav, .navbar>.container-fluid{
+          flex-direction: column;
+          width: 100%;
+      }
+      div#navbarSupportedContent{
+          width: 100%;
+      }
+  }
+  @media screen and (max-width: 992px) {
+      .navbar>.container-fluid{
+          flex-direction: row;
+      }
+      .navbar-expand-lg .navbar-nav, nav.navbar{
+
+              height: auto;
+
+          flex-direction: column;
+          width: 100%;
+      }
+  }
+
+  /*
+      *LOS H1 DE TODOS LOS ARCHIVOS HTML SERÁN DE 14PX
+  */
+  h1, h2{
+      font-size: .9375rem;
+  }
+  /* botones del div que tiene un display none pues tendran estos estilos */
+  .btn-negacion{
+      background-color: #67019e;
+      color: white;
+  }
+   .btn-aceptar{
+      background-color: #c357ff;
+      color: white;
+  }
+  .btn-negacion:hover, .btn-aceptar:hover{
+      background-color: #d07bff;
+      color: white;
+  }

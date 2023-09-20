@@ -1,0 +1,49 @@
+
+.contenedorPerfiles{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+  text-align: center;
+}
+.contenedorPerfiles figure{
+  padding: 1em;
+  margin: 0;
+  border-radius: .625em;
+  background-color: white;
+}
+img{
+  width: 165px;
+  height: auto;
+  border-radius: .625em;
+}
+.seleccion{
+  background-color: #c357ff;
+  color: white;
+  margin-top: 1em;
+}
+.seleccion:hover{
+  background-color: #d07bff;
+  color: white;
+}
+.contenedorbgPadding{
+  margin-bottom: 1em;
+}
+figure figcaption{
+  color: #67019e;
+}
+.seleccionado{
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+  margin-top: 1em;
+}
+.perfil{
+  border-radius: 50%;
+      width: 50px;
+      height: 50px;
+}
+@media screen and (max-width: 576px) {
+  .contenedorPerfiles{
+      grid-template-columns: repeat(2, 1fr);
+  }
+}

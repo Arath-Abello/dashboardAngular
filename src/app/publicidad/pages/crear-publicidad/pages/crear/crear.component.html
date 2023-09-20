@@ -1,0 +1,313 @@
+<div class="container-fluid">
+  <div class="row">
+    <shared-navegacion class="col-12 col-md-12 col-lg-2 col-xl-2 col-xxl-2 p-0"></shared-navegacion>
+
+    <main class="col-12 col-md-12 col-lg-10 col-lg-10 col-xl-10">
+
+      <div class="row contenedorbgPadding">
+
+        <div class="contenedor-perfil">
+          <p>Bienvenido ARATH_ABELLO</p>
+
+          <a href="#" class="text-primary content-img-perfil">
+            <img class="perfil" src="assets/img-avatares/img-avatar1.jpeg" alt="perfil">
+          </a>
+        </div>
+      </div>
+      <div id="cajaComun">
+        <section class="contenedor-crear">
+          <header class="header-modulo-identidad">
+            <h1>Crear Publicidad</h1>
+          </header>
+          <form action="#" class="formPublicidad row">
+            <label for="marca">Marca: </label>
+            <div>
+              <input type="text" name="marcaPublicidad" id="marca">
+            </div>
+            <label for="nombre">Nombre: </label>
+            <div>
+              <input type="text" name="nombrePublicidad" id="nombre">
+            </div>
+            <label for="imgOvideo">Imagen o Video: </label>
+            <div>
+              <input type="text" name="imgOvideoPublicidad" id="imgOvideo">
+              <br>
+              <button class="btn crear-publicidad archivo mt-2">SELECCIONAR ARCHIVO</button>
+            </div>
+            <label for="audio">Audio: </label>
+            <div>
+              <input type="text" name="audioPublicidad" id="audio">
+              <br>
+              <button class="btn crear-publicidad archivo mt-2">SELECCIONAR ARCHIVO</button>
+            </div>
+          </form>
+        </section>
+        <section class="tipoPublicidad">
+          <header class="header-crear-empresa">
+            <h2>Tipo Publicidad</h2>
+          </header>
+
+          <article>
+
+            <form action="#" class="formCrearPublicidad2">
+              <div class="contenedorInputRadio">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exclusiva" id="exclusiva">
+                  <label class="form-check-label" for="exclusiva">
+                    Exclusiva
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="comun" id="comun">
+                  <label class="form-check-label" for="comun">
+                    Común
+                  </label>
+                </div>
+              </div>
+
+              <div class="contenedorFechas">
+                <div class="paddingLeft">
+                  <label for="fechaInicio">Fecha Inicio</label>
+                  <br>
+                  <label for="fechaFin">Fecha Fin</label>
+                </div>
+
+
+                <div class="contenedorInputsFechas">
+                  <input type="date" name="fechaInicio" id="fechaInicio">
+
+                  <input type="date" name="fechaFin" id="fechaFin">
+                </div>
+
+              </div>
+
+            </form>
+
+          </article>
+        </section>
+
+        <div class="contenedorPublicidadCanales">
+          <article>
+            <h2>Canal Publicidad:</h2>
+            <form action="#">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="canal1" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Canal 1
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="canal2" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck2">
+                  Canal 2
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="canal3" id="defaultCheck3">
+                <label class="form-check-label" for="defaultCheck3">
+                  Canal 3
+                </label>
+              </div>
+            </form>
+          </article>
+
+          <article>
+            <h2>Posición Publicidad:</h2>
+            <form action="#">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Posición 1
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Posición 2
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                <label class="form-check-label" for="flexRadioDefault3">
+                  Posición 3
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                <label class="form-check-label" for="flexRadioDefault4">
+                  Posición 4
+                </label>
+              </div>
+            </form>
+          </article>
+
+          <article>
+            <h2>Horario Exposición:</h2>
+            <form action="#" class="formHorario">
+              <div>
+                <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                <label class="btn crear-publicidad btn-horario mb-2" for="btn-check">08:00 / 11:59</label>
+                <input type="checkbox" class="btn-check" id="btn-check2" autocomplete="off">
+                <label class="btn crear-publicidad btn-horario mb-2" for="btn-check2">12:00 / 15:59</label>
+                <input type="checkbox" class="btn-check" id="btn-check3" autocomplete="off">
+                <label class="btn crear-publicidad btn-horario mb-2" for="btn-check3">16:00 / 19:59</label>
+              </div>
+              <div>
+                <input type="checkbox" class="btn-check" id="btn-check4" autocomplete="off">
+                <label class="btn crear-publicidad btn-horario mb-2" for="btn-check4">20:00 / 23:59</label>
+                <input type="checkbox" class="btn-check" id="btn-check5" autocomplete="off">
+                <label class="btn crear-publicidad btn-horario mb-2" for="btn-check5">00:00 / 03:59</label>
+                <input type="checkbox" class="btn-check" id="btn-check6" autocomplete="off">
+                <label class="btn crear-publicidad btn-horario" for="btn-check6">04:00 / 07:59</label>
+              </div>
+            </form>
+            <button class="btn crear-publicidad">CREAR PUBLICIDAD</button>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="crearExclusiva" id="crearExlusiva">
+        <section class="contenedor-crear">
+          <header class="header-modulo-identidad">
+            <h1>Crear Publicidad</h1>
+          </header>
+          <form action="#" class="formPublicidadEditar row">
+            <label for="marca">Marca: </label>
+            <div>
+              <input type="text" name="marcaPublicidad" id="marca">
+            </div>
+            <label for="nombre">Nombre: </label>
+            <div>
+              <input type="text" name="nombrePublicidad" id="nombre">
+            </div>
+          </form>
+        </section>
+        <section class="tipoPublicidad">
+          <header class="header-crear-empresa">
+            <h2>Tipo Publicidad</h2>
+          </header>
+
+          <article>
+
+            <form action="#" class="formCrearPublicidad2Editar">
+              <div class="contenedorInputRadio2">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="exclusiva1">
+                  <label class="form-check-label" for="exclusiva1">
+                    Exclusiva
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="comun" id="comun2">
+                  <label class="form-check-label" for="comun2">
+                    Común
+                  </label>
+
+
+                </div>
+              </div>
+
+              <div class="contenedorFechas">
+                <div class="paddingLeft">
+                  <label for="fechaInicio">Fecha Inicio</label>
+                  <br>
+                  <label for="fechaFin">Fecha Fin</label>
+                </div>
+
+
+                <div class="contenedorInputsFechas">
+                  <input type="date" name="fechaInicio" id="fechaInicio">
+
+                  <input type="date" name="fechaFin" id="fechaFin">
+                </div>
+
+              </div>
+            </form>
+
+          </article>
+        </section>
+
+        <div>
+          <button class="btn crear-publicidad btnAgregar" id="btnAgregar">AGREGAR PUBLICIDAD</button>
+
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <thead>
+                <tr class="fw-bold fs-6 text-gray-800">
+                  <th class="th">NOMBRE</th>
+                  <th class="th">ARCHIVO</th>
+                  <th class="th">FECHA CREACIÓN</th>
+                  <th class="th">ACCIONES</th>
+                </tr>
+              </thead>
+              <tbody class="tbody-relative ">
+                <tr>
+                  <td>Imagen/video 1</td>
+                  <td>gana_nike.jpge/gana_nike.mp3</td>
+                  <td>23-06-2023</td>
+                  <td><a href="editar-publicidad.html" class="btn editar-btn"><img class="img-btn"
+                        src="assets/img-btn/edit.png" alt=""></a><button class="btn eliminar-btn"><img class="img-btn"
+                        src="assets/img-btn/bin.png" alt=""></button></td>
+                </tr>
+                <tr>
+                  <td>video 1</td>
+                  <td>gana_nike.mpeg4</td>
+                  <td>23-06-2023</td>
+                  <td><a href="editar-publicidad.html" class="btn editar-btn"><img class="img-btn"
+                        src="assets/img-btn/edit.png" alt=""></a><button class="btn eliminar-btn"><img class="img-btn"
+                        src="assets/img-btn/bin.png" alt=""></button></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="caja-escondida" id="cajaEscondida">
+              <p>Desea eliminar la siguiente publicidad?</p>
+              <button class="btn  btn-aceptar">Si</button>
+              <button class="btn  btn-negacion">No</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="caja-escondida" id="cajaEscondida2">
+          <div class="cerrar_publicidad">
+            <p>Agregar publicidad</p>
+            <button class="btn text-primary cerrar pt-0" id="cerrar"><img class="img-btn"  src="assets/img-btn/close.png" alt=""></button>
+          </div>
+
+          <form action="#" class="formPublicidadAgregar">
+            <div class="contenedorlabelPublicidad">
+              <label for="nombre">Nombre: </label>
+
+              <label for="ImagenOvideo2">Imagen o video</label>
+
+              <label for="audio2" class="paddingY">Audio</label>
+
+            </div>
+            <div class="contenedorinputPublicidad">
+              <div>
+                <input type="text" id="nombre2">
+              </div>
+              <div>
+                <input type="text" name="ImagenOvideo" id="ImagenOvideo2">
+                <button class="btn crear-publicidad archivo mt-2">SELECCIONAR ARCHIVO</button>
+              </div>
+              <div>
+                <input type="text" name="audio" id="audio2">
+                <button class="btn crear-publicidad archivo mt-2">SELECCIONAR ARCHIVO</button>
+              </div>
+
+            </div>
+
+
+
+
+          </form>
+          <button class="btn crear-publicidad">AGREGAR PUBLICIDAD</button>
+        </div>
+      </div>
+    </main>
+
+  </div>
+</div>
+
+

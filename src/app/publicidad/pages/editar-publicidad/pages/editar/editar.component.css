@@ -1,0 +1,184 @@
+.formPublicidad{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: .5em;
+}
+.perfil{
+  border-radius: 50%;
+      width: 50px;
+      height: 50px;
+}
+.btn.crear-publicidad{
+  background-color: #c357ff;
+  color: white;
+}
+.btn.crear-publicidad:hover{
+  background-color: #d07bff;
+  color: white;
+}
+.contenedorInputRadio{
+  display: flex;
+  gap: 1em;
+}
+.formCrearPublicidad2, .contenedorFechas{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+input[type="text"], input[type="date"]{
+  border-radius: .3125em;
+  border: 1px solid black;
+}
+.contenedorPublicidadCanales{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.contenedor-crear, .tipoPublicidad, .contenedorPublicidadCanales{
+  padding: 1em;
+}
+.formHorario{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.archivo{
+  width: 190px;
+  font-size: .8rem;
+}
+.contenedorInputsFechas{
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  width: min-content;
+  padding-left: 1.5em;
+}
+.paddingLeft{
+  padding-left: 1em;
+}
+.contenedor-btnActualizar{
+  display: flex;
+  justify-content: flex-end;
+}
+/* ********************************************************************************** */
+.formPublicidadEditar{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: .5em;
+}
+.contenedorInputRadio2{
+  display: flex;
+  gap: 1em;
+}
+.formCrearPublicidad2Editar, .contenedorFechas2{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.contenedor-crear, .tipoPublicidad, .contenedorPublicidadCanales{
+  padding: 1em;
+}
+.formHorario{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.img-btn{
+  width: 20px;
+  height: 20px;
+}
+.tbody-relative{
+  position: relative;
+}
+.caja-escondida{
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  left: 35%;
+  width: 30%;
+  display: none;
+  background-color: #F4F4F4;
+  opacity: .9;
+  padding: 2em 2em;
+  text-align: center;
+  border-radius: .625em;
+}
+form.formPublicidadAgregar{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.cerrar_publicidad{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.agregarPublicidad{
+  background-color: #c357ff;
+  color: white;
+}
+.agregarPublicidad:hover{
+  background-color: #d07bff;
+}
+.contenedorlabelPublicidad, .contenedorinputPublicidad{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.paddingY{
+  padding: 3em 0;
+}
+.btnAgregar{
+  margin: 1em 0;
+  font-size: .8rem;
+  width: 190px;
+}
+.tbody-relative{
+  position: relative;
+}
+th.th{
+  background-color: #DD9FFF;
+  text-align: center;
+  font-size: .625rem;
+}
+.tbody-relative tr td{
+  text-align: center;
+  line-height: 50px;
+}
+.btn-horario{
+  font-size: .8rem;
+}
+.marginTop{
+  margin-top: 1em;
+}
+@media screen and (max-width: 1320px){
+  .formHorario{
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .caja-escondida{
+      width: 50%;
+  }
+}
+@media screen and (max-width: 768px){
+  .formHorario{
+      display: block;
+  }
+  .caja-escondida{
+      width: 50%;
+      left: 30%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contenedorFechas, .formCrearPublicidad2f, .formHorario, .formPublicidadEditar{
+      display: block;
+  }
+  .formPublicidad, .contenedorPublicidadCanales{
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .caja-escondida{
+      left: 0;
+      width: 100%;
+  }
+  form.formPublicidad{
+      display: block;
+  }
+
+}

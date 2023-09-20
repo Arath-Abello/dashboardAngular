@@ -1,0 +1,26 @@
+/* **************************************** MAIN INDEX.html ********************************* */
+.mainIndex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.enlace{
+  text-decoration: none;
+}
+.logo-index{
+  width: 300px;
+  height: auto;
+}
+.figureIndex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+figcaption header h1{
+  font-size: 2rem;
+}
+.hgroup{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}

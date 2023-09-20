@@ -1,0 +1,198 @@
+<div class="container-fluid">
+  <div class="row">
+    <shared-navegacion class="col-12 col-md-12 col-lg-2 col-xl-2 col-xxl-2 p-0"></shared-navegacion>
+    <main class="col-12 col-md-12 col-lg-10 col-lg-10 col-xl-10">
+
+      <div class="row contenedorbgPadding">
+        <div class="contenedor-perfil">
+          <p>Bienvenido ARATH_ABELLO</p>
+          <a href="#" class="text-primary content-img-perfil">
+            <img class="perfil" src="../../../../../../assets/identidades/img-avatar1.jpeg" alt="perfil">
+          </a>
+        </div>
+      </div>
+      <div class="crearExclusiva" id="crearExlusiva">
+        <section class="contenedor-crear">
+          <header class="header-modulo-identidad">
+            <h1>Editar Publicidad</h1>
+          </header>
+          <form action="#" class="formPublicidadEditar row">
+            <label for="marca">Marca: </label>
+            <div>
+              <input type="text" name="marcaPublicidad" id="marca" value="Nike">
+            </div>
+            <label for="nombre">Nombre: </label>
+            <div>
+              <input type="text" name="nombrePublicidad" id="nombre" value="Gana con Nike">
+            </div>
+          </form>
+        </section>
+        <section class="tipoPublicidad">
+          <header class="header-crear-empresa">
+            <h2>Tipo Publicidad</h2>
+          </header>
+
+          <article>
+
+            <form action="#" class="formCrearPublicidad2Editar">
+              <div class="contenedorInputRadio2">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="exclusiva1" checked>
+                  <label class="form-check-label" for="exclusiva1">
+                    Exclusiva
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="comun" id="comun2" disabled>
+                  <label class="form-check-label" for="comun2">
+                    Común
+                  </label>
+
+
+                </div>
+              </div>
+
+              <div class="contenedorFechas">
+                <div class="paddingLeft">
+                  <label for="fechaInicio">Fecha Inicio</label>
+                  <br>
+                  <label for="fechaFin">Fecha Fin</label>
+                </div>
+
+
+                <div class="contenedorInputsFechas">
+                  <input type="date" name="fechaInicio" id="fechaInicio" value="2023-07-01">
+
+                  <input type="date" name="fechaFin" id="fechaFin" value="2023-07-31">
+                </div>
+
+              </div>
+            </form>
+
+          </article>
+        </section>
+
+        <div>
+          <button class="btn crear-publicidad btnAgregar" id="btnAgregar">AGREGAR PUBLICIDAD</button>
+
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <thead>
+                <tr class="fw-bold fs-6 text-gray-800">
+                  <th class="th">NOMBRE</th>
+                  <th class="th">ARCHIVO</th>
+                  <th class="th">FECHA CREACIÓN</th>
+                  <th class="th">ACCIONES</th>
+                </tr>
+              </thead>
+              <tbody class="tbody-relative ">
+                <tr>
+                  <td>Imagen/video 1</td>
+                  <td>gana_nike.jpge/gana_nike.mp3</td>
+                  <td>23-06-2023</td>
+                  <td><button class="btn editar-btn" id="editar-publicidad"><img class="img-btn"
+                        src="../../../../../../assets/botones/edit.png" alt=""></button><button class="btn eliminar-btn"><img
+                        class="img-btn" src="../../../../../../assets/botones/bin.png" alt=""></button></td>
+                </tr>
+                <tr>
+                  <td>video 1</td>
+                  <td>gana_nike.mpeg4</td>
+                  <td>23-06-2023</td>
+                  <td><button class="btn editar-btn"><img class="img-btn" src="../../../../../../assets/botones/edit.png"
+                        alt=""></button><button class="btn eliminar-btn"><img class="img-btn"
+                        src="../../../../../../assets/botones/bin.png" alt=""></button></td>
+                </tr>
+              </tbody>
+
+            </table>
+            <div class="caja-escondida" id="cajaEscondida">
+              <p>Desea eliminar la siguiente publicidad?</p>
+              <button class="btn  btn-aceptar">Si</button>
+              <button class="btn  btn-negacion">No</button>
+            </div>
+            <div class="contenedor-btnActualizar">
+              <button class="btn crear-publicidad">ACTUALIZAR PUBLICIDAD</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="caja-escondida" id="cajaEscondida2">
+          <div class="cerrar_publicidad">
+            <p>Editar publicidad</p>
+            <button class="btn text-primary cerrar" id="cerrar"><img class="img-btn" src="assets/img-btn/close.png"
+                alt=""></button>
+          </div>
+
+          <form action="#" class="formPublicidadAgregar">
+            <div class="contenedorlabelPublicidad">
+              <label for="nombre">Nombre: </label>
+
+              <label for="ImagenOvideo2">Imagen o video</label>
+
+              <label for="audio2" class="paddingY">Fecha creación</label>
+
+            </div>
+            <div class="contenedorinputPublicidad">
+              <div>
+                <input type="text" id="nombre2" value="Imagen/Video 1">
+              </div>
+              <div>
+                <input type="text" name="ImagenOvideo" id="ImagenOvideo2" value="gana_nike.jpge/gana_nike.mp3">
+                <button class="btn crear-publicidad archivo mt-2">SELECCIONAR ARCHIVO</button>
+              </div>
+              <div>
+                <input type="date" name="fecha" value="2023-06-26">
+                <!-- <input type="text" name="audio" id="audio2"> -->
+                <!-- <button class="btn crear-publicidad archivo mt-2">SELECCIONAR ARCHIVO</button> -->
+              </div>
+
+            </div>
+
+
+
+
+          </form>
+          <button class="btn crear-publicidad">ACTUALIZAR PUBLICIDAD</button>
+        </div>
+
+        <div class="caja-escondida" id="cajaEscondida3">
+          <div class="cerrar_publicidad">
+            <p>Crear publicidad</p>
+            <button class="btn text-primary cerrar" id="cerrarCajaEscondida3"><img class="img-btn"
+                src="assets/img-btn/close.png" alt=""></button>
+          </div>
+
+          <form action="#" class="formPublicidadAgregar">
+            <div class="contenedorlabelPublicidad">
+              <label for="nombre">Nombre: </label>
+
+              <label for="ImagenOvideo2">Imagen o video</label>
+
+              <label for="audio2" class="paddingY">audio</label>
+
+            </div>
+            <div class="contenedorinputPublicidad">
+              <div>
+                <input type="text" id="nombre2">
+              </div>
+              <div>
+                <input type="text" name="ImagenOvideoCrear" id="ImagenOvideo2">
+                <button class="btn crear-publicidad archivo mt-2">SELECCIONAR ARCHIVO</button>
+              </div>
+              <div>
+                <input type="text" name="audio2" id="audio2">
+                <button class="btn crear-publicidad archivo mt-2">SELECCIONAR ARCHIVO</button>
+              </div>
+
+            </div>
+
+
+
+
+          </form>
+          <button class="btn crear-publicidad marginTop">AGREGAR PUBLICIDAD</button>
+        </div>
+      </div>
+  </main>
+</div>
+</div>

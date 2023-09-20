@@ -1,0 +1,101 @@
+<div class="container-fluid">
+  <div class="row">
+    <shared-navegacion class="col-12 col-md-12 col-lg-2 col-xl-2 col-xxl-2 p-0"></shared-navegacion>
+
+    <main class="col-12 col-md-12 col-lg-10 col-xl-10 col-xxl-10">
+      <div class="row contenedorbgPadding">
+
+        <div class="contenedor-perfil">
+          <p>Bienvenido ARATH_ABELLO</p>
+
+          <a href="#" class="text-primary content-img-perfil">
+            <img class="perfil" src="../../../../../assets/identidades/img-avatar1.jpeg" alt="perfil">
+          </a>
+        </div>
+      </div>
+      <section class="container">
+        <header class="row header-modulo-identidad">
+          <h1 class="row">Crear Identidad Virtual</h1>
+        </header>
+        <div class="row form" id="formCrearIdentidad">
+          <div class="col-12 col-md-12 col-lg-12 col-xl-5 content-inputNombre p-0">
+            <div class="contenedorInputNombre">
+              <label for="nombre">Nombre: </label>
+              <input type="text" name="identidadNombre" value="Comprador" id="nombre">
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-12 col-xl-7 d-flex p-0 contenedorAvatares">
+            <p for="Identidad">Seleccionar Avatar:</p>
+            <div class="contentGrid">
+
+                <button *ngFor="let imgBtn of imagenIdentidades" class="inputImage btn"><img [src]="imgBtn.imagen" alt="Imagen de identidad virtual"></button>
+            </div>
+          </div>
+        </div>
+        <article class="row article">
+          <header class="col-12 p-0">
+            <h2>Seleccionar Atributos</h2>
+          </header>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12 col-md-4 col-lg-4 col-xl-4 caja">
+                <p class="gustosPersonalizacion">Gustos</p>
+                <div class="form-check form-check-custom form-check-solid form-check-lg">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckboxLg" />
+                  <label class="form-check-label" for="flexCheckboxLg">
+                    Atributo 1
+                  </label>
+                </div>
+                <p>Interéses</p>
+                <div class="form-check form-check-custom form-check-solid form-check-lg">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckboxLg" />
+                  <label class="form-check-label" for="flexCheckboxLg">
+                    Atributo 3
+                  </label>
+                </div>
+                <div class="form-check form-check-custom form-check-solid form-check-lg">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckboxLg" />
+                  <label class="form-check-label" for="flexCheckboxLg">
+                    Atributo 6
+                  </label>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3 col-xl-4">
+                <div class="caja-img">
+                  <button class="btn">
+                    <img src="../../../../../assets/botones/right-arrow.png" alt="">
+                  </button>
+                  <br>
+                  <button class="btn">
+                    <img src="../../../../../assets/botones/right-arrow.png" class="invertido" alt="">
+                  </button>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-4 col-xl-4 caja">
+                <p class="gustosPersonalizacion">Gustos</p>
+                <div class="form-check form-check-custom form-check-solid form-check-lg">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckboxLg" />
+                  <label class="form-check-label" for="flexCheckboxLg">
+                    Atributo 2
+                  </label>
+                </div>
+                <p>Interéses</p>
+                <div class="form-check form-check-custom form-check-solid form-check-lg">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckboxLg" />
+                  <label class="form-check-label" for="flexCheckboxLg">
+                    Atributo 5
+                  </label>
+                </div>
+              </div>
+              <button class="col-12 btn btn-identidad">
+                GUARDAR IDENTIDAD
+              </button>
+            </div>
+          </div>
+
+        </article>
+      </section>
+    </main>
+  </div>
+</div>
+

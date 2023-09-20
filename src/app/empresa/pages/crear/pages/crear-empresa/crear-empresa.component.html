@@ -1,0 +1,110 @@
+<div class="container-fluid">
+  <div class="row">
+    <shared-navegacion class="col-12 col-md-12 col-lg-2 col-xl-2 col-xxl-2 p-0"></shared-navegacion>
+
+    <main class="col-12 col-md-12 col-lg-10 col-lg-10 col-xl-10">
+      <div class="row contenedorbgPadding">
+
+        <div class="contenedor-perfil">
+          <p>Bienvenido ARATH_ABELLO</p>
+
+          <a href="#" class="text-primary content-img-perfil">
+            <img class="perfil" src="../../../../../../assets/identidades/img-avatar1.jpeg" alt="perfil">
+          </a>
+        </div>
+      </div>
+      <section class="contenedor-crear">
+        <header class="header-modulo-identidad">
+          <h1>Crear empresa</h1>
+        </header>
+        <form action="#" class="formEmpresa row">
+          <label for="NombreEmpresa">Nombre: </label>
+          <div class="contentInputEmpresa">
+            <input type="text" name="nombreEmpresa" id="NombreEmpresa">
+          </div>
+          <label for="direccion">Dirección: </label>
+          <div class="contentInputEmpresa">
+            <input type="text" name="direccionEmpresa" id="direccionEmpresa">
+          </div>
+          <label for="telefono">Teléfono: </label>
+          <div class="contentInputEmpresa">
+            <input type="text" name="telefonoEmpresa" id="telefonoEmpresa">
+          </div>
+          <label for="rut">RUT: </label>
+          <div class="contentInputEmpresa">
+            <input type="text" name="rutEmpresa" id="rutEmpresa">
+          </div>
+          <label for="email">Email: </label>
+          <div class="contentInputEmpresa">
+            <input type="text" name="emailEmpresa" id="emailEmpresa">
+          </div>
+        </form>
+      </section>
+      <section>
+        <header class="header-crear-empresa">
+          <h2>Contacto</h2>
+          <button class="btn btnContactoCrear" id="btnContacto">CREAR CONTACTO</button>
+        </header>
+      </section>
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead>
+            <tr class="fw-bold fs-6 text-gray-800">
+              <th class="th">NOMBRE</th>
+              <th class="th">CARGO</th>
+              <th class="th">EMAIL</th>
+              <th class="th">ACCIONES</th>
+            </tr>
+          </thead>
+          <tbody class="tbody-relative ">
+            <tr>
+              <td>Tiger Nixon</td>
+              <td>Desarrollador</td>
+              <td>2011/04/25</td>
+              <td><button class="btn"><img class="img-btn" src="../../../../../../assets/botones/edit.png" alt=""></button><button class="btn eliminar-btn"><img class="img-btn" src="../../../../../../assets/botones/bin.png" alt=""></button></td>
+            </tr>
+            <tr>
+              <td>Garrett Winters</td>
+              <td>Diseñador</td>
+              <td>2011/07/25</td>
+              <td><button class="btn"><img class="img-btn" src="../../../../../../assets/botones/edit.png" alt=""></button><button class="btn eliminar-btn"><img class="img-btn" src="../../../../../../assets/botones/bin.png" alt=""></button></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="caja-escondida" id="cajaEscondida">
+          <p>Desea eliminar el siguiente contacto?</p>
+
+          <button class="btn  btn-aceptar">Si</button>
+          <button class="btn  btn-negacion">No</button>
+        </div>
+
+        <div class="caja-escondida" id="cajaEscondida2">
+          <div class="cerrar_contacto">
+            <p>Agregar contacto</p>
+            <button class="btn text-primary cerrar pt-0" id="cerrar"><img class="img-btn"  src="assets/img-btn/close.png" alt=""></button>
+          </div>
+
+          <form action="#" class="formContacto">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombreContacto">
+            <label for="cargo">Cargo</label>
+            <select name="cargos" id="cargo">
+              <option value="Diseñador">Diseñador</option>
+              <option value="Desarrollador">Desarrollador</option>
+            </select>
+            <label for="email">Email</label>
+            <input type="email" name="emailContacto" id="email">
+            <label for="contrasena">Contraseña</label>
+            <input type="password" name="password" id="contrasena">
+
+            <button class="btn actualizar-contacto">ACTUALIZAR CONTACTO</button>
+          </form>
+        </div>
+      </div>
+      <div class="editar-empresa-contenedor">
+        <a routerLink="editar-empresa" class="btn editar-empresa">EDITAR EMPRESA</a>
+      </div>
+    </main>
+
+  </div>
+</div>
